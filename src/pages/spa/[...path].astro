@@ -1,0 +1,13 @@
+---
+import App from '../../spa/App.vue';
+
+export function getStaticPaths() {
+	return [
+		{ params: { path: "about"}},
+		{ params: { path: undefined }}
+	];
+}
+
+---
+
+<App client:only></App>
